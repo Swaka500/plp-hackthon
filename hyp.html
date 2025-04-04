@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derrick's Portfolio</title>
+    <!--CSS-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            color: black;
+            text-align: center;
+        }
+            
+            .p1 {
+                text-align: left;
+                font-size: 50px;
+                font-weight: bold;
+                color: #333;
+            }
+                
+                span {
+                    color: blueviolet;
+                }
+
+           .img1 {
+                
+            position: absolute; top: 0%; center; right: 0%;
+            width: 20%; height: auto;
+            margin-top: 80px;
+            }
+
+        nav {
+            background: palevioletred;
+            padding: 15px;
+            display: flex;
+            align-items: right;
+            justify-content: right;
+            
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        
+        }
+        nav ul li {
+            margin: 0 15px;
+        
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: blue;
+            transition: color 0.3s;
+            
+        }
+        nav ul li a:hover {
+            color: #ff9800;
+        
+        }
+        section {
+            padding: 20px 10px;
+            background: pink;
+            margin-top: 100px;
+            
+        }
+        .project-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        
+        }
+        
+        .project {
+            background: #444;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .project:hover {
+            transform: scale(1.1);
+        }
+        form input, form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            
+        }
+
+        .btn {
+    background: palevioletred;
+    color: white;
+    padding: 20px 200px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    padding-left: 150px;
+    position: absolute; 0%; center; left: 0%;
+          }
+
+        form button {
+            border: 2px solid blueviolet;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        
+        }
+        
+        form button:hover {
+            background: palevioletred;
+        }
+        
+        footer {
+            background: ;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+    <!--The End of css-->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">My Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#email">Email</a></li>
+                <li><a href="#Downloads">Downloads</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <p class="p1">Hi, I'm <span>Derrick</span><br> Swaka from Kenya.</p>
+   <a href="#projects" class="btn">View My Work</a>
+    <img src="plc.jpeg" alt="Profile Picture" class="img1">
+    
+    <section id="about">
+        <h1>About Me</h1>
+        <p>I am a passionate full stack web developer with experience in HTML, CSS, and JavaScript. With a keen interest in building scalable, efficient, and user-friendly websites that provide a great user experience. With the experience and skills acquired at Power Learn Project, I enjoy turning ideas into reality through clean code and innovative solutions. 
+            <br><br>
+            Beyond coding, I'm diving into the world of DevOps, exploring ways to streamline development workflows, automate processes, and improve deployment efficiency. Whether it's optimizing databases, creating seamless user experiences, or setting up CI/CD pipelines, I am always eager to learn new technologies and improve my skills.
+            <br><br>
+            When I'm not coding, I love exploring new technologies, reading insightful novels, or engaging in immersive gaming experiences. These activities inspire creativity and help me stay motivated in the ever-evolving world of tech.</p>
+        <p>My goal is to create impactful digital experiences that not only meet client needs but also exceed user expectations. I am excited to connect with like-minded individuals and collaborate on innovative projects that push the boundaries of technology.</p>    
+    </section>
+    
+    <section id="services">
+        <h1>My Services</h1>
+        <p>Web Development, UI/UX Design and DevOps.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+                <p>A project is a Python-based calculator that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. It takes user input, processes calculations, and displays the results. The calculator can be built using functions, conditionals, and loops, and may include additional features like error handling for invalid inputs or division by zero.</p>
+                <a href="https://github.com/Swaka500/wk-1-python-assg.git" target="_blank">View Project</a>
+    </section>
+    
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form onsubmit="return validateForm(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <section id="Email">
+        <h1>Social Media</h1>
+        <p>GitHub: <a href="https://github.com/Swaka500" target="_blank">Swaka500</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/derrick-swaka-9639412b4" target="_blank">Derrick Swaka</a></p>
+    </section>
+
+    <section id="Downloads"
+    <h1>Downloads</h1>
+    <p><a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:489ba967-457b-4ba0-9cae-6ea6872e0d13" download>Download My CV</a></p>
+    <p><a href="https://www.camscanner.com/share/list?encrypt_id=MHgyZTliMmQ1MGU1&sid=8027F5EB6EC74740hy6K08XXUS&pid=dsa&style=1&t=1743355252&share_page_style=0&app_version=6.84.0" download>Download My Certificates</a></p>
+</section>
+    <footer>
+        <p>&copy; 2025 Derrick Mutimba Swaka. All Rights Reserved.</p>
+    </footer>
+    <!--The End of html-->
+    
+    <script>
+        function showProjectDetails(projectName) {
+            alert("You clicked on " + projectName);
+        }
+        
+        function validateForm(event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+            
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+            alert("Message sent successfully!");
+            return true;
+        }
+    </script>
+</body>
+</html>
