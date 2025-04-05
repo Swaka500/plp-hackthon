@@ -14,6 +14,15 @@
             color: black;
             text-align: center;
         }
+
+        typing {
+      font-size: 24px;
+      font-family: monospace;
+      white-space: nowrap;
+      border-right: 2px solid black;
+      width: fit-content;
+      overflow: hidden;
+    }
             
             .p1 {
                 text-align: left;
@@ -28,9 +37,13 @@
 
            .img1 {
                 
-            position: absolute; top: 0%; center; right: 0%;
+            position: absolute; top: 0%; center; center; 0%;
             width: 20%; height: auto;
             margin-top: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
             }
 
         nav {
@@ -141,7 +154,7 @@
             </ul>
         </nav>
     </header>
-    <p class="p1">Hi, I'm <span>Derrick</span><br> Swaka from Kenya.</p>
+    <p class="p1"></p>
    <a href="#projects" class="btn">View My Work</a>
     <img src="plc.jpeg" alt="Profile Picture" class="img1">
     
@@ -210,6 +223,43 @@
             alert("Message sent successfully!");
             return true;
         }
+
+        const text = "Hi, I'm Derrick\nSwaka from Kenya."; 
+const lines = text.split("\n"); 
+const words = lines[0].split(" "); 
+let index = 0;
+let currentLine = 0;
+
+function getRandomColor() {
+  const colors = ["Blue", "Red", "Green", "Orange", "Yellow", "Purple", "Pink", "Cyan", "Magenta", "Lime"];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+function typeText() {
+  const p1 = document.querySelector(".p1");
+
+  if (currentLine < lines.length) {
+    if (index < words.length) {
+      const span = document.createElement("span");
+      span.textContent = words[index] + " "; 
+      span.style.color = getRandomColor();
+      p1.appendChild(span);
+      index++;
+      setTimeout(typeText, 500);
+    } else {
+      currentLine++;
+      if (currentLine < lines.length) {
+        p1.appendChild(document.createElement("br"));
+        words.length = 0; 
+        words.push(...lines[currentLine].split(" "));
+        index = 0;
+        setTimeout(typeText, 500);
+      }
+    }
+}
+}
+
+window.onload = typeText;
     </script>
 </body>
 </html>
