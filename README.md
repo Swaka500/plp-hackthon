@@ -1,29 +1,78 @@
-# plp-hackthon
+My Portfolio Project
+This project is a personal portfolio website built to showcase my skills, projects, and experience. It was developed using HTML, CSS, JavaScript, and MongoDB.
 
-Hackathon 1: Portfolio Building
+Table of Contents
+Project Overview
 
-📂 Assignment Requirements
-All learners are required to submit a hackathon project.
+Features
 
-The project must be built strictly using HTML, CSS, javascript and Databases.
+Technologies Used
 
-Submission must be done via this link: Submit Here.
+Installation
 
-Participants should nominate the most outstanding portfolio project and paste the deployed link in the submissions section under their group.
+Usage
 
-Individuals must star rate each other’s solutions and provide constructive comments based on the evaluation criteria below
+Future Improvements
 
-🏆 Evaluation Criteria
-Submissions will be evaluated based on the following:
+Contact
 
-Creativity and Ingenuity – Original ideas and standout features.
+Project Overview
+The portfolio website is designed to provide an engaging and responsive user experience across all devices. It highlights my key projects, technical skills, and professional background. The inclusion of MongoDB allows for dynamic content management and potential visitor interaction via stored form submissions.
 
-Code Quality – Clean, readable, and efficient code.
+Features
+Responsive Design: Optimized layout for desktops, tablets, and smartphones.
 
-Documentation  – Informative README file and clear code comments.
+Interactive Elements: Smooth animations and dynamic content powered by JavaScript.
 
-Deployment – Successfully hosted on a platform like GitHub Pages or Netlify.
+Project Showcase: Detailed descriptions and live demos of my major projects.
 
-Development Process  – Effective collaboration and project management.
+Contact Form: Enables visitors to send messages directly through the site, with data securely stored in MongoDB.
 
-Technology Stack – Usage of responsive, visually appealing design elements.
+Database Integration: MongoDB is used to store contact form submissions and other dynamic data securely.
+
+Technologies Used
+HTML5 – Structuring the web content.
+
+CSS3 – Styling and responsive layouts using Flexbox and Grid.
+
+JavaScript – DOM manipulation, event handling, and form validation.
+
+MongoDB – NoSQL database used for storing contact form data and dynamic site content.
+
+Installation and Usage
+Clone the repository to your local machine.
+
+Open the index.html file in your preferred web browser.
+
+Set up the database and configure connection details as per the documentation.
+
+Set up MongoDB:
+
+Install MongoDB locally or create a cloud instance via MongoDB Atlas.
+
+Configure your application to connect to your MongoDB database using connection URI.
+
+Update the database connection configuration in your backend files as necessary.
+
+Usage
+Explore the homepage to get an overview of my skills and projects.
+
+Navigate to the Projects section for detailed descriptions and links.
+
+Use the Contact form to reach out; submissions will be stored securely in MongoDB for prompt responses.
+
+Future Improvements
+Implement user authentication for personalized content.
+
+Add a blog section powered by a CMS backend.
+
+Improve SEO and accessibility compliance.
+
+Integrate CI/CD pipeline for automated deployment.
+
+Contact
+Feel free to reach out for project inquiries or collaboration opportunities!
+
+Email: derrickswaka910@gmail.com
+
+Phone: +254 115 231 794

@@ -28,30 +28,25 @@
 
            .img1 {
                 
-            position: absolute; top: 0%; center; center; 0%;
+            position: absolute; top: 0%; 
             width: 20%; height: auto;
-            margin-top: 80px;
-            border-radius: 50%;
+            margin-top: 50px;
             object-fit: cover;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s;
+            padding-left: 300px;
+           
             }
 
         nav {
             background: palevioletred;
-            padding: 15px;
             display: flex;
-            align-items: right;
             justify-content: right;
             
         }
         
         nav ul {
             list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        
+            display: flex;        
         }
         nav ul li {
             margin: 0 15px;
@@ -100,14 +95,11 @@
         }
 
         .btn {
-    background: palevioletred;
-    color: white;
-    padding: 20px 200px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-    padding-left: 150px;
-    position: absolute; 0%; center; left: 0%;
+            text-decoration: none;
+            font-size: 50px;
+            ackground-color: blueviolet;
+    
+    
           }
 
         form button {
@@ -138,7 +130,7 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">My Services</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#project">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#email">Email</a></li>
                 <li><a href="#Downloads">Downloads</a></li>
@@ -147,9 +139,8 @@
         </nav>
     </header>
     <p class="p1"></p>
-   <a href="#projects" class="btn">View My Work</a>
-    <img src="plc.jpeg" alt="Profile Picture" class="img1">
-    
+   <a href="#project" class="btn">WELCOME</a>
+    <img src="image1.jpeg" alt="Profile Picture" class="img1">
     <section id="about">
         <h1>About Me</h1>
         <p>I am a passionate full stack web developer with experience in HTML, CSS, and JavaScript. With a keen interest in building scalable, efficient, and user-friendly websites that provide a great user experience. With the experience and skills acquired at Power Learn Project, I enjoy turning ideas into reality through clean code and innovative solutions. 
@@ -165,8 +156,8 @@
         <p>Web Development, UI/UX Design and DevOps.</p>
     </section>
     
-    <section id="projects">
-        <h2>Projects</h2>
+    <section id="project">
+        <h2>Project</h2>
                 <p>A project is a Python-based calculator that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. It takes user input, processes calculations, and displays the results. The calculator can be built using functions, conditionals, and loops, and may include additional features like error handling for invalid inputs or division by zero.</p>
                 <a href="https://github.com/Swaka500/wk-1-python-assg.git" target="_blank">View Project</a>
     </section>
@@ -201,7 +192,7 @@
         <!-- JavaScript code to handle project click events and form validation -->
         function showProjectDetails(projectName) {
             alert("You clicked on " + projectName);
-        }
+        };
         
         function validateForm(event) {
             event.preventDefault();
